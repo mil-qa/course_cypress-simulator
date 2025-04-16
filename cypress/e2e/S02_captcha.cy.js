@@ -11,7 +11,7 @@ describe("Course: Cypress Simulator - S02: Planejamento de testes | Captcha", ()
     cy.get("#captchaInput").clear();
     cy.contains("button", "Verify").should("be.disabled");
   });
-  it.only("shows an error on a wrong captcha answer and goes back to its initial state", () => {
+  it("shows an error on a wrong captcha answer and goes back to its initial state", () => {
     cy.get("#captchaInput").type("12345");
     cy.contains("button", "Verify").click();
     cy.get("#captchaError")

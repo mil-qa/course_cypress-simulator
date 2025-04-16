@@ -145,7 +145,7 @@ describe("Course: Cypress Simulator - S05: A11Y | Captcha", () => {
   });
 });
 
-describe.only("Course: Cypress Simulator - S08: Erro na Matrix", () => {
+describe("Course: Cypress Simulator - S08: Erro na Matrix", () => {
   beforeEach(() => {
     cy.login();
     cy.visit("./src/index.html?skipCaptcha=true&chancesOfError=1", {

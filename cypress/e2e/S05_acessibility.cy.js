@@ -114,7 +114,7 @@ describe("Course: Cypress Simulator - S05: A11Y | Cookies", () => {
     cy.get("@cookieConsentBanner").find("button:contains('Decline')").click();
     cy.get("@cookieConsentBanner").should("not.be.visible");
     cy.getAllLocalStorage().then((response) => {
-      const url = "http://localhost:59231";
+      const url = Object.keys(response)[0];
       expect(response[url].cookieConsent).to.be.equal("declined");
     });
   });

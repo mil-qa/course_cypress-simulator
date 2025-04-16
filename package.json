@@ -4,7 +4,11 @@
   "description": "Curso 'Cypress Simulator' da Escola Talking About Testing.",
   "main": "src/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy:open:web": "cypress open",
+    "cy:run:web": "cypress run",
+    "cy:open:mobile": "cypress open --config viewportWidth=410 viewportHeight=860",
+    "cy:run:mobile": "cypress run --config viewportWidth=410 viewportHeight=860",
+    "cy:cloud": "cypress run --record"
   },
   "keywords": [
     "Testing",
@@ -16,5 +20,10 @@
   ],
   "author": "Walmyr <wlsf82@gmail.com> (https://walmyr.dev/)",
   "license": "MIT",
-  "type": "commonjs"
+  "type": "commonjs",
+  "devDependencies": {
+    "axe-core": "^4.10.2",
+    "cypress": "^14.2.1",
+    "cypress-axe": "^1.6.0"
+  }
 }

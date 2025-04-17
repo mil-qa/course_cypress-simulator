@@ -241,21 +241,21 @@ document.addEventListener("DOMContentLoaded", () => {
       "Chai's expect command provides a readable, natural-language syntax for writing assertions, like expect(value).to.equal(expectedValue), making it easy to validate conditions in tests",
   };
 
-  const checkCookieConsent = () => {
-    const storedConsent = localStorage.getItem("cookieConsent");
-    const isLoggedIn = localStorage.getItem("cypressSimulatorSession");
+  // const checkCookieConsent = () => {
+  //   const storedConsent = localStorage.getItem("cookieConsent");
+  //   const isLoggedIn = localStorage.getItem("cypressSimulatorSession");
 
-    if (!isLoggedIn) {
-      cookieConsentBanner.style.display = "none";
-      return;
-    }
+  //   if (!isLoggedIn) {
+  //     cookieConsentBanner.style.display = "none";
+  //     return;
+  //   }
 
-    if (storedConsent === "accepted" || storedConsent === "declined") {
-      cookieConsentBanner.style.display = "none";
-    } else {
-      cookieConsentBanner.style.display = "block";
-    }
-  };
+  //   if (storedConsent === "accepted" || storedConsent === "declined") {
+  //     cookieConsentBanner.style.display = "none";
+  //   } else {
+  //     cookieConsentBanner.style.display = "block";
+  //   }
+  // };
 
   acceptCookiesBtn.addEventListener("click", () => {
     localStorage.setItem("cookieConsent", "accepted");

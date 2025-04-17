@@ -1,28 +1,33 @@
-# _Cypress Simulator_
+# Cypress Simulator
 
-👋 Seja bem-vindo(a)!
+Este é um projeto do curso de Cypress do instrutor Walmyr Filho da escola Talking About Testing.
 
-É muito bom tê-lo(a) aqui. Tenho certeza que você vai amar esse curso. ❤️
+## Pré-requisitos
 
-## O que você vai aprender?
+Algumas tecnologias e ferramentas são necessárias para rodar o projeto, sendo elas:
 
-- Como planejar quais testes devem ser implementados e em que orderm
-- Como garantir testes estáveis
-- Como lidar com esperas aleatórias
-- Como lidar com _captcha_
-- Como lidar com _banners_ de consentimento de _cookies_ 🍪
-- Como criar diferentes comandos customizados
-- Como otimizar testes com a criação e restauração da sessão do usuário
-- Como criar testes de acessibilidade automatizados
-- Como utilizar _feature flags_ em testes automatizados
-- Como configurar uma esteira de integração contínua onde os testes sejam executados em paralelo
-- Como configurar _test retries_
-- Como gerar artefatos para ajudar na depuração de falhas na integração contínua
+- git, versão sugerida `2.43.0`
+- node.js, versão sugerida `v22.11.0`
+- npm, versão sugerida `11.2.0`
 
-## Vamos começar?
+## Instalação
 
-Vá para a seção [estrutura do curso](./lessons/_course-structure_.md).
+No terminal, rode `npm install` ou `npm i` para instalar as dependências necessárias.
 
-___
+## Testes
 
-Este é um curso da [**Escola Talking About Testing**](https://talking-about-testing.vercel.app/).
+Neste projeto existe a possibilidades de rodar os testes na viewport desktop
+
+**Desktop**
+
+- Para o modo assistido, use o script: `npm run cy:open:web`
+- Para o modo headless, use o script: `npm run cy:run:web`
+
+**Mobile**
+
+- Para o modo assistido, use o script: `npm run cy:open:mobile`
+- Para o modo headless, use o script: `npm run cy:run:mobile`
+
+---
+
+Para mais informações sobre cursos ou materiais sobre Cypress, acesse o site da escola [Talking about Testing](https://talkingabouttesting.com/).
